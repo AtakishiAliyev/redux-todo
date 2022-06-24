@@ -15,9 +15,21 @@ const Details = () => {
             <div className='flex justify-between items-center'>
                 <p className='text-sm text-[#8a9ca5]'>{todo?.length} tasks</p>
                 <div className='flex my-1'>
-                    <button onClick={() => { dispatch(filterTodo('all')) }} className={` ${filter === 'all' && 'active'} text-[#8a9ca5] text-sm py-0.5 px-2`}>All</button>
-                    <button onClick={() => { dispatch(filterTodo('active')) }} className={` ${filter === 'active' && 'active'} text-[#8a9ca5] text-sm py-0.5 px-2`}>Active</button>
-                    <button onClick={() => { dispatch(filterTodo('completed')) }} className={` ${filter === 'completed' && 'active'} text-[#8a9ca5] text-sm py-0.5 px-2`}>Completed</button>
+                    <button
+                        onClick={() => { dispatch(filterTodo('all')) }}
+                        className={` ${filter === 'all' && 'active'} text-[#8a9ca5] text-sm py-0.5 px-2`}>
+                        All
+                    </button>
+                    <button
+                        onClick={() => { dispatch(filterTodo('active')) }}
+                        className={` ${filter === 'active' && 'active'} text-[#8a9ca5] text-sm py-0.5 px-2`}>
+                        Active
+                    </button>
+                    <button
+                        onClick={() => { dispatch(filterTodo('completed')) }}
+                        className={` ${filter === 'completed' && 'active'} text-[#8a9ca5] text-sm py-0.5 px-2`}>
+                        Completed
+                    </button>
                 </div>
                 <div className='flex'>
                     <button

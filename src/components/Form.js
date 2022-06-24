@@ -37,7 +37,13 @@ const Form = () => {
 
     return (
         <form onSubmit={(e) => { addTodoItem(e) }} className='mt-3.5'>
-            <input onChange={(e) => { getInputValue(e) }} value={text} className='w-full outline-none' type="text" placeholder='Add a new task ...' />
+            <input
+                onChange={(e) => { getInputValue(e) }}
+                value={text}
+                className='w-full outline-none'
+                type="text"
+                placeholder='Add a new task ...'
+            />
         </form>
     )
 }
